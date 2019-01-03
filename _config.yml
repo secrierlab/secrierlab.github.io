@@ -1,6 +1,6 @@
 name: Secrier Lab Research
 description: Secrier lab website
-url: http://secrierlab.io
+url: http://secrierlab.github.io
 
 markdown: redcarpet
 permalink: /:categories/:title/
