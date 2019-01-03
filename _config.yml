@@ -2,11 +2,11 @@ name: Secrier Lab Research
 description: Secrier lab website
 url: https://secrierlab.github.io
 
-markdown: redcarpet
+markdown: kramdown
 permalink: /:categories/:title/
 future: true
 
-redcarpet:
+kramdown:
   extensions:
    - tables
    - no_intra_emphasis
