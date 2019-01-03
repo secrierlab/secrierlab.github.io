@@ -2,7 +2,7 @@ name: Secrier Lab Research
 description: Secrier lab website
 url: http://secrierlab.io
 
-kramdown: redcarpet
+markdown: redcarpet
 permalink: /:categories/:title/
 future: true
 
