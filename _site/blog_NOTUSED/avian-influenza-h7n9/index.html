@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Preliminary analysis of the fifth epidemic of avian influenza A/H7N9</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="Secrier Lab Research" href="http://secrierlab.io/feed.xml">
+
+    <!-- Customized Bootstrap + Font Awesome + Solarized -->
+    <link href="/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/images/logo.png"/>
+
+	<!-- Typekit -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'xeu8jut',
+		  scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-26244371-2', 'secrierlab.io');
+		ga('send', 'pageview');
+
+	</script>
+
+	<!-- jQuery -->
+	<script src="/js/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="/js/transition.js"></script>
+	<script src="/js/collapse.js"></script>
+
+</head>
+
+<body>
+
+	<div id="header">
+		<nav class="navbar navbar-default navbar-static-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-element" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+					<object class="logo navbar-brand" data="/images/logo.svg" type="image/svg+xml"></object>
+					<a class="navbar-brand" href="/">secrier lab</a>
+					
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-collapse-element">
+					<ul class="nav navbar-nav navbar-right">
+						<!-- 
+						<li>
+						
+						<a href="/blog/">blog</a>
+						</li> -->
+						
+						<li>
+						
+						<a href="/papers/">papers</a>
+						</li>
+						
+						<li>
+						
+						<a href="/projects/">projects</a></li>
+						
+						<li>
+						
+						<a href="/team/">team</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container">
+
+	<div class="blog-post">
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<div class="media">
+				<div class="media-body">
+					<div class="title media-heading">
+						<a href="/blog_notused/avian-influenza-h7n9/" class="off">Preliminary analysis of the fifth epidemic of avian influenza A/H7N9</a>
+					</div>
+					<p>
+					<div class="smallhead">
+						10 Mar 2017
+						
+						by <a class="off" href="
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						">
+						James Hadfield
+						</a>
+						
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+
+	<div class="bigspacer"></div>
+
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			
+			
+			<img class="offset" src="/images/blog/h7n9_geo.png">
+			
+			
+			<div class="post">
+				<h3>Background</h3>
+
+<p>Avian influenza A(H7N9) has resulted in annual epidemics over the past five years in China. H7N9 has a high mortality rate of around 40% and the currently ongoing fifth epidemic is the largest yet, with 460 infections reported by February 27th, 2017 (<a href="http://www.who.int/influenza/vaccines/virus/201703_zoonotic_vaccinevirusupdate.pdf?ua=1">WHO report</a>). Transmission is still predominantly from poultry, where H7N9 viruses continue to circulate, and human-to-human transmission is thought to be rare. The CDC considers H7N9 to have &quot;the greatest potential to cause a pandemic&quot; of all influenza A viruses. For more information, see this <a href="https://www.cdc.gov/flu/avianflu/h7n9-virus.htm">CDC information page</a>.</p>
+
+<h3>Nextstrain</h3>
+
+<p><a href="http://nextstrain.org">Nextstrain</a> now has the ability to display phylogenies and geographical data for both the <a href="http://nextstrain.org/flu/h7n9/ha">NA</a> and <a href="http://nextstrain.org/flu/h7n9/na">HA</a> genes, drawn from over 1200 samples covering all five human epidemics of H7N9.
+This analysis was possible thanks to the data sharing of the influenza research community through <a href="http://platform.gisaid.org">GISAID</a>. It is our hope that making these analyses available to the community will aid understanding of this epidemic as it unfolds.
+Please note that the analysis currently presented in nextstrain is preliminary and further research is required.</p>
+
+<h3>Phylogeny &amp; Geographic Distribution</h3>
+
+<p><img src="/images/blog/h7n9_lineages.png" alt="geographic-distribution">
+The HA phylogeny indicates that the expansion of a single lineage contributes 86% of sequences from the current epidemic. Temporal analysis indicates that this lineage originated during the 2015 (third) epidemic, however only one isolate from this lineage was sampled during the fourth epidemic. Inference of the geographical distribution of H7N9 indicate frequent jumps throughout the eastern coast of China, with limited dispersion elsewhere. Host jumps have also been inferred, however incomplete sampling restricts our ability to comment further.</p>
+
+<h3>Insertion in the Protease Cleavage Site</h3>
+
+<p>Highly pathogenic avian influenza viruses are often characterized by insertions in the host protease cleavage site, which enhance the cleavage of HA protein to HA1 and HA2 - a process necessary for infection.
+We find a lineage consisting of four isolates with a four amino-acid insertion (KRTA) in this region, in agreement with <a href="https://www.cdc.gov/mmwr/volumes/66/wr/mm6609e2.htm">Iuliano et al</a>.
+This insertion is not present in any other isolates, and this lineage contributes less than 10% of the sequences from the current epidemic.
+Interestingly, this lineage appears to have diverged from the lineage causing most fifth epidemic infections in mid-2014.
+Despite the lack of expansion during this epidemic, the potential for a highly pathogenic H7N9 variant is worrying and warrants closer inspection.</p>
+
+<h3>Reassortment</h3>
+
+<p><img src="/images/blog/h7n9_tangle.png" alt="reassortment">
+Reassortment led to the origin of human H7N9 and continues to play a role during the epidemics. The above figure shows that the current dominant clade in the HA phylogeny, which contributes the majority of fifth epidemic cases, is comprised of at least two NA clades due to reassortment. The isolates containing the protease cleavage site insertion (in HA) are monophyletic in both HA and NA segments.</p>
+
+<h3>Acknowledgements</h3>
+
+<p>A full list of labs and authors who have made data available for analysis in these samples is available in <a href="http://data.nextstrain.org/flu_h7n9_acknowledgement_table.xls">this spreadsheet</a>. All figures from <a href="http://nextstrain.org">nextstrain</a>. Many thanks to Gytis Dudas, Richard Neher and Trevor Bedford for assistance.</p>
+
+<!-- ### mutations on branches leading to expansion -->
+
+<!-- ![image-title-here](/images/blog/h7n9_geo.png){:class="img-responsive"} -->
+
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+
+	<div class="bigspacer"></div>
+	<div class="spacer"></div>
+
+</div>
+
+
+	</div>
+
+	<div id="footer"><span style="display:none">foo</span></div>
+
+</body>
+</html>
