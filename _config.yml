@@ -2,6 +2,10 @@ name: Secrier Lab Research
 description: Secrier lab website
 url: https://secrierlab.github.io
 
+highlighter: rouge
 markdown: kramdown
 permalink: /:categories/:title/
 future: true
+
+kramdown:
+  input: GFM
