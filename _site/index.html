@@ -1,1 +1,272 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><title>Secrier Lab</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="css/style.css" rel="stylesheet" media="screen"><link rel="shortcut icon" href="/images/logo.png"/> <script>!function(e){var t,a={kitId:"xeu8jut",scriptTimeout:3e3},c=e.documentElement,i=setTimeout(function(){c.className=c.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},a.scriptTimeout),n=e.createElement("script"),o=!1,s=e.getElementsByTagName("script")[0];c.className+=" wf-loading",n.src="//use.typekit.net/"+a.kitId+".js",n.async=!0,n.onload=n.onreadystatechange=function(){if(t=this.readyState,!(o||t&&"complete"!=t&&"loaded"!=t)){o=!0,clearTimeout(i);try{Typekit.load(a)}catch(e){}}},s.parentNode.insertBefore(n,s)}(document)</script> <script>!function(e,a,t,n,c,s,i){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,s=a.createElement(t),i=a.getElementsByTagName(t)[0],s.async=1,s.src=n,i.parentNode.insertBefore(s,i)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-26244371-2","secrierlab.github.io"),ga("send","pageview")</script> <script src="/js/jquery.min.js"></script> <script src="/js/transition.js"></script><script src="/js/collapse.js"></script></head><body><div id="header"> <nav class="navbar navbar-default navbar-static-top" role="navigation"><div class="container"><div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-element" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button></div><div class="collapse navbar-collapse" id="navbar-collapse-element"><ul class="nav navbar-nav navbar-right"><li> <a href="/papers/">papers</a></li><li> <a href="/projects/">projects</a></li><li> <a href="/team/">team</a></li></ul></div></div> </nav></div><div class="container"><div class="row"><div class="col-md-12"> <object class="pull-left biglogo" data="/images/logo.svg" type="image/svg+xml"></object><div class="bigtitle logobox"> Secrier Lab <br><div class="smallhead"> <em>Computational Cancer Genomics and Immunology @ UCL Genetics Institute</em></div></div></div></div><div class="bigspacer"></div><div class="row"><div class="col-md-12"><div class="smallhead"><p align="justify"> The Secrier lab at the <a class="off" href="https://www.ucl.ac.uk/biosciences/departments/gee/research-centres/genetics-institute">UCL Genetics Institute</a> works at the interface of cancer genomics and immunology. We are interested in understanding the evolution of genomic instability during cancer development and progression, and how this links to changes in the tumour microenvironment and impacts immune responses. We aim to address this by developing new computational methods for the identification of large-scale events contributing to genomic instability, probabilistic models that link genetic changes and immune activity, and methods for inferring the timing and genetic features of key points in cancer progression. <img class="center" width="600" src="/images/researchPlan-min.jpg"></p></div></div></div><div class="bigspacer"></div><div class="bigspacer"></div><div class="row"><div class="col-md-12"><div class="head"> <a class="off" href="/papers/">Recent papers</a></div><div class="spacer"></div></div></div><div class="row"><div class="col-md-3 reduced-gutter"><div class="pad-left"><div class="note"> <i class="fa fa-file-text-o fa-fw"></i> <a class="off" href="/papers/li-francies-organoids-natcomm/"> Organoid cultures recapitulate esophageal adenocarcinoma heterogeneity providing a model for clonality studies and precision therapeutics </a></div><div class="smallspacer"></div><div class="smallnote"> Posted 30 Jul 2018</div><div class="bigspacer"></div></div></div><div class="col-md-3 reduced-gutter"><div class="pad-left"><div class="note"> <i class="fa fa-file-text-o fa-fw"></i> <a class="off" href="/papers/secrier-mutsig-natgen/"> Mutational signatures in esophageal adenocarcinoma define etiologically distinct subgroups with therapeutic relevance </a></div><div class="smallspacer"></div><div class="smallnote"> Posted 1 Oct 2016</div><div class="bigspacer"></div></div></div></div><div class="spacer"></div><div class="row"><div class="col-md-12"><div class="head"> <a class="off" href="/projects/">Active projects</a></div><div class="spacer"></div></div></div><div class="row"></div><div class="spacer"></div><div class="row"><div class="col-md-12"><div class="head"> Misc</div><div class="spacer"></div></div></div><div class="row"><div class="col-md-12 reduced-gutter"><div class="pad-left"><ul class="list-inline"><li class="footernav"> <i class="fa fa-angle-right"></i> <a class="off" href="/misc/join/">Join</a></li><li class="footernav"> <i class="fa fa-angle-right"></i> <a class="off" href="/misc/contact/">Contact</a></li><li class="footernav"> <i class="fa fa-angle-right"></i> <a class="off" href="/misc/about/">About</a></li><li class="footernav"> <i class="fa fa-angle-right"></i> <a class="off" href="/talks/">Talks</a></li><li class="footernav"> <i class="fa fa-angle-right"></i> <a class="off" href="https://www.ucl.ac.uk/biosciences/departments/gee/research-centres/genetics-institute">UCL Genetics Institute</a></li></ul></div><div class="spacer"></div></div></div></div><div id="footer"><span style="display:none">foo</span></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>trapnell lab</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <!-- Customized Bootstrap + Font Awesome + Solarized -->
+    <link href="/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/images/favicon.png"/>	
+			
+	<!-- Google Analytics -->	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-58618307-1', 'cole-trapnell-lab.github.io');
+		ga('send', 'pageview');
+
+	</script>
+			
+</head>
+
+<body>
+	
+	<div id="header">
+		<nav class="navbar navbar-default navbar-static-top" role="navigation">	 
+			<div class="container">	
+				
+				<ul class="nav navbar-nav navbar-right">
+                    <!-- 
+                    <li>
+                    
+                    <a href="/blog/">blog</a>
+                    </li> -->
+					
+					<li>
+					
+					<a href="/papers/">Papers</a></li>
+					
+					<li>
+					
+					<a href="/projects/">Projects</a></li>	  
+					
+					<li>
+					
+					<a href="/team/">People</a></li>	  	  
+				</ul>
+			</div>
+		</nav>	
+	</div>
+	
+	<div class="container">	
+		
+	<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<object class="pull-left biglogo" data="/images/logo.svg" type="image/svg+xml"></object>
+		<div class="bigtitle logobox" style="display:table-cell; vertical-align:middle">
+		Trapnell Lab
+		</div>
+	</div>				
+</div>
+
+<div class="hugespacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="smallhead">
+			The Trapnell Lab at the University of Washington's <a class="off" href="http://www.gs.washington.edu/">Department of Genome Sciences</a> studies cell differentiation, reprogramming, and other transitions between stable or metastable cellular states. We also study the role of cell-cell communication in governing these processes.  We aim to identify genes that control cellular transitions, primarily using single-cell genomics.    
+		</div>
+	</div>				
+</div>
+
+<div class="hugespacer"></div>
+
+<div class="row">
+    <!-- <div class="col-md-4">
+        <div class="head">
+            <a class="off" href="/blog/">Recent posts</a>
+        </div>
+        <div class="bigspacer"></div>
+        <div class="feedbox pad-left">
+            
+        </div>
+        <div class="bigspacer"></div>
+    </div> -->
+    <!-- <div class="col-md-4"> -->
+		<div class="head">
+			<a class="off" href="/papers/">
+				Recent papers
+			</a>
+		</div>
+		<div class="bigspacer"></div>
+		<div class="feedbox pad-left">		
+			
+				<div class="note">
+					<i class="fa fa-file-text-o fa-fw"></i>
+					<a class="off" href="/papers/qiu-scribe/">
+					Towards inferring causal gene regulatory networks from single cell expression measurements
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+				<div class="smallnote">
+					Posted
+					30 Sep 2018
+				</div>
+				<div class="spacer"></div>	
+				<div class="spacer"></div>				
+			
+				<div class="note">
+					<i class="fa fa-file-text-o fa-fw"></i>
+					<a class="off" href="/papers/cacchiarelli-hsmm/">
+					Aligning Single-Cell Developmental and Reprogramming Trajectories Identifies Molecular Determinants of Myogenic Reprogramming Outcome
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+				<div class="smallnote">
+					Posted
+					05 Sep 2018
+				</div>
+				<div class="spacer"></div>	
+				<div class="spacer"></div>				
+			
+				<div class="note">
+					<i class="fa fa-file-text-o fa-fw"></i>
+					<a class="off" href="/papers/cao-sci-car/">
+					Joint profiling of chromatin accessibility and gene expression in thousands of single cells
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+				<div class="smallnote">
+					Posted
+					30 Aug 2018
+				</div>
+				<div class="spacer"></div>	
+				<div class="spacer"></div>				
+			
+				<div class="note">
+					<i class="fa fa-file-text-o fa-fw"></i>
+					<a class="off" href="/papers/wray-dutra-card11/">
+					Activated CARD11 accelerates germinal center kinetics, promoting mTORC1 and terminal differentiation
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+				<div class="smallnote">
+					Posted
+					20 Aug 2018
+				</div>
+				<div class="spacer"></div>	
+				<div class="spacer"></div>				
+			
+				<div class="note">
+					<i class="fa fa-file-text-o fa-fw"></i>
+					<a class="off" href="/papers/pliner-cicero/">
+					Cicero predicts cis-regulatory DNA interactions from single-cell chromatin accessibility data
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+				<div class="smallnote">
+					Posted
+					02 Aug 2018
+				</div>
+				<div class="spacer"></div>	
+				<div class="spacer"></div>				
+			
+				<div class="note">
+					<i class="fa fa-file-text-o fa-fw"></i>
+					<a class="off" href="/papers/cusanovich-mouse-atac/">
+					A single-cell atlas of in vivo mammalian chromatin accessibility
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+				<div class="smallnote">
+					Posted
+					02 Aug 2018
+				</div>
+				<div class="spacer"></div>	
+				<div class="spacer"></div>				
+			
+				<div class="note">
+					<i class="fa fa-file-text-o fa-fw"></i>
+					<a class="off" href="/papers/packer-sc-omics-review/">
+					Single-Cell Multi-omics&#58; An Engine for New Quantitative Models of Gene Regulation
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+				<div class="smallnote">
+					Posted
+					01 Aug 2018
+				</div>
+				<div class="spacer"></div>	
+				<div class="spacer"></div>				
+			
+				<div class="note">
+					<i class="fa fa-file-text-o fa-fw"></i>
+					<a class="off" href="/papers/cusanovich_fly_embrogenesis/">
+					The cis-regulatory dynamics of embryonic development at single-cell resolution
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+				<div class="smallnote">
+					Posted
+					14 Mar 2018
+				</div>
+				<div class="spacer"></div>	
+				<div class="spacer"></div>				
+			
+		</div>
+		<div class="bigspacer"></div>		
+    <!-- </div> -->
+    <!-- <div class="col-md-4">
+        <div class="head">
+            <a class="off" href="/projects/">Active projects</a>
+        </div>
+        <div class="bigspacer"></div>
+        <div class="feedbox pad-left">
+            
+        </div>
+        <div class="bigspacer"></div>
+    </div>     -->
+</div>
+
+<div class="bigspacer"></div>
+
+
+<div class="head">		
+	Misc
+</div>
+<div class="spacer"></div>
+<ul class="list-inline">
+	
+	<li class="footernav">
+		&gt; <a class="off" href="/misc/join/">Join</a>
+	</li>
+	
+	<li class="footernav">
+		&gt; <a class="off" href="/misc/contact/">Contact</a>
+	</li>
+	
+	<li class="footernav">
+		&gt; <a class="off" href="/misc/about/">About</a>
+	</li>
+	
+</ul>
+
+
+
+
+
+
+
+	
+	</div>
+		
+	<div id="footer"><span style="display:none">foo</span></div>
+	    		
+	<!-- MathJax support -->
+	<script type="text/javascript"
+	 src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<!-- MathJax config -->
+	<script src="/js/mathjax.config.js"></script>	
+			
+</body>
+</html>
+
