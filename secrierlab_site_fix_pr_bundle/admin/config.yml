@@ -1,0 +1,75 @@
+backend:
+  name: github
+  repo: secrierlab/secrierlab.github.io
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "papers"
+    label: "Papers"
+    folder: "_papers"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Authors", name: "authors", widget: "string"}
+      - {label: "Venue/Year", name: "venue", widget: "string"}
+      - label: "Links"
+        name: "links"
+        widget: "list"
+        fields:
+          - {label: "Text", name: "text", widget: "string"}
+          - {label: "URL", name: "url", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+
+  - name: "people"
+    label: "People"
+    folder: "_people"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name", name: "title", widget: "string"}
+      - {label: "Role", name: "role", widget: "string", required: false}
+      - {label: "Email", name: "email", widget: "string", required: false}
+      - {label: "ORCID", name: "orcid", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+
+  - name: "projects"
+    label: "Projects"
+    folder: "_projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Summary", name: "summary", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+
+  - name: "pages"
+    label: "Site Pages"
+    files:
+      - label: "About"
+        name: "about"
+        file: "misc/about.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Contact"
+        name: "contact"
+        file: "misc/contact.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
