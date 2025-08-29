@@ -41,3 +41,4 @@ Decap needs GitHub OAuth for the GitHub backend. You have two options:
 ## 6) Notes
 - This kit uses only GitHub Pages–approved plugins.
 - The included GitHub Actions workflow (`.github/workflows/jekyll.yml`) uses the official `jekyll-build-pages` action.
+- 
