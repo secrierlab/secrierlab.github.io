@@ -6310,3 +6310,36 @@ blockquote p {
     opacity: 0;
   }
 }
+
+/* Desktop header — keep it to one line */
+@media (min-width: 992px) {
+  /* Brand text a bit smaller */
+  .navbar-brand {
+    font-size: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  /* Menu links slightly smaller + tighter padding */
+  .navbar-nav > li > a {
+    font-size: 15px;       /* was ~16px */
+    padding-left: 10px;    /* was ~15px */
+    padding-right: 10px;
+  }
+
+  /* Logo a bit smaller to free horizontal space */
+  .navbar .logo,
+  .logo {
+    height: 28px;          /* adjust until it fits nicely */
+    width: auto;
+    margin-right: 8px;
+  }
+}
+
+/* Optional: prevent accidental wrapping in the header container */
+@media (min-width: 992px) {
+  #header .navbar .container {
+    white-space: nowrap;
+  }
+}
+
