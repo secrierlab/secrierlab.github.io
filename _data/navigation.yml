@@ -1,0 +1,13 @@
+main:
+  - title: Research
+    url: /projects/
+  - title: Papers
+    url: /papers/
+  - title: People
+    url: /team/
+  - title: Lab philosophy
+    url: /labphilosophy/
+  - title: Join
+    url: /misc/join/
+  - title: Research blog
+    url: /blog/

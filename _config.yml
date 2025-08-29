@@ -1,0 +1,23 @@
+title: Secrier Lab
+description: Computational Cancer Biology @ UCL
+url: https://secrierlab.github.io
+baseurl: ""
+permalink: /:categories/:title/
+markdown: kramdown
+
+# GitHub Pages–approved plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+collections:
+  papers:
+    output: true
+    permalink: /papers/:slug/
+  people:
+    output: true
+    permalink: /team/:slug/
+  projects:
+    output: true
+    permalink: /projects/:slug/

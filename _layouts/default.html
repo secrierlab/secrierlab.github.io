@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+    <link href="/css/style.css" rel="stylesheet" media="screen">
+    <link rel="shortcut icon" href="/images/logoSecrier.png"/>
+    {% seo %}
+  </head>
+  <body>
+    <div id="header">{% include nav.html %}</div>
+    <main class="container">
+      {{ content }}
+    </main>
+    <div id="footer">{% include footer.html %}</div>
+    <!-- MathJax (optional for posts) -->
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="/js/mathjax.config.js"></script>
+  </body>
+</html>
