@@ -13,3 +13,5 @@ main:
     url: /blog/
   - title: Join
     url: /misc/join/
+  - title: Contact
+    url: /misc/contact/
