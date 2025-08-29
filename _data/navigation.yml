@@ -9,5 +9,7 @@ main:
     url: /labphilosophy/
   - title: Join
     url: /misc/join/
+  - title: Plain science        
+    url: /public/     
   - title: Research blog
     url: /blog/
