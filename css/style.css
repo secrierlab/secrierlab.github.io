@@ -6342,33 +6342,3 @@ blockquote p {
     white-space: nowrap;
   }
 }
-
-/* Team page */
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 18px;
-  align-items: start;
-}
-.person-card {
-  background: #fff;
-  border: 1px solid #eee;
-  border-radius: 14px;
-  padding: 14px;
-  box-shadow: 0 2px 10px rgba(0,0,0,.03);
-}
-.person-photo {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 12px;
-  display: block;
-  margin-bottom: 10px;
-}
-.person-name { font-size: 1.05rem; margin: 0 0 2px; }
-.person-role { margin: 0 0 8px; color: #586069; }
-.person-links a { text-decoration: none; border-bottom: 1px dotted #bbb; }
-.person-links a + a { margin-left: 10px; }
-.person-bio { margin-top: 8px; }
-
-
