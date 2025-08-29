@@ -7,9 +7,9 @@ main:
     url: /team/
   - title: Lab philosophy
     url: /labphilosophy/
-  - title: Join
-    url: /misc/join/
   - title: Plain science        
     url: /public/     
-  - title: Research blog
+  - title: Blog
     url: /blog/
+  - title: Join
+    url: /misc/join/
