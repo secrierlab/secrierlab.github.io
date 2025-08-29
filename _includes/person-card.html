@@ -1,0 +1,19 @@
+<article class="person-card">
+  {% if include.person.image %}
+  <img src="{{ include.person.image }}" alt="{{ include.person.title }}" class="person-photo">
+  {% endif %}
+  <h3 class="person-name">{{ include.person.title }}</h3>
+  {% if include.person.role %}<p class="person-role">{{ include.person.role }}</p>{% endif %}
+  <p class="person-links">
+    {% if include.person.email %}<a href="mailto:{{ include.person.email }}">Email</a>{% endif %}
+    {% if include.person.twitter %} · <a href="{{ include.person.twitter }}" rel="noopener">Twitter</a>{% endif %}
+    {% if include.person.scholar %} · <a href="{{ include.person.scholar }}" rel="noopener">Scholar</a>{% endif %}
+    {% if include.person.orcid %} · <a href="{{ include.person.orcid }}" rel="noopener">ORCID</a>{% endif %}
+    {% if include.person.github %} · <a href="{{ include.person.github }}" rel="noopener">GitHub</a>{% endif %}
+  </p>
+  {% if include.person.content %}
+  <div class="person-bio">
+    {{ include.person.content | markdownify }}
+  </div>
+  {% endif %}
+</article>
