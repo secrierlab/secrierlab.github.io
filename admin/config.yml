@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: secrierlab/secrierlab.github.io
-  branch: main
+  branch: master
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
